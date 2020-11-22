@@ -20,12 +20,14 @@
 
 body {
     min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
 }
 
 // Index
 .index-bg {
     background-image: url("/images/bg.png");
-    background-attachment: fixed;
+    background-size: cover;
+    //background-attachment: fixed;
 }
 
 .shade {
