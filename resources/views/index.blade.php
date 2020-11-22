@@ -65,7 +65,7 @@ Blackmine
                     <div class="my-auto mr-auto h4">0%</div>
                 </div>
             </div>
-            <div class="flex-fill h-100 d-flex flex-column mx-1">
+            <div class="d-flex flex-column mx-1 flex-fill">
                 <div class="progress flex-fill m-1">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-green" role="progressbar"
                         style="width: 100%">
