@@ -110,11 +110,11 @@ Blackmine
 
 @section('customjs')
 <script>
-    /* $(document).snowfall({
-        flakeCount : 100,
+    $(document).snowfall({
+        flakeCount : 50,
         maxSpeed : 10,
         minSize: 1,
         maxSize: 3
-    }); */
+    });
 </script>
 @endsection
