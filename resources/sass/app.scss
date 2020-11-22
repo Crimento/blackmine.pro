@@ -1,0 +1,37 @@
+// Normalize.css
+@import "~normalize.css/normalize.css";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Animate.css
+@import "~animate.css/animate.min.css";
+
+// Navbar
+.navbar {
+    height: 60px;
+}
+
+body {
+    height: calc(100vh - 60px);
+}
+
+// Index
+.index-bg {
+    background-image: url("/images/bg.png");
+    background-attachment: fixed;
+}
+
+.shade {
+    background-color: rgba(255, 255, 255, 0.33);
+}
+
+.vh-33 {
+    height: 33vh;
+}
