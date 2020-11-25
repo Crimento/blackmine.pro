@@ -4,17 +4,28 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav bg-black mx-auto">
-            <li class="nav-item p-1 active">
+            <li class="nav-item p-1 {{ (request()->is('/')) ? 'active' : '' }}">
                 <a class="nav-link" href="/">Главная</a>
             </li>
             <li class="nav-item p-1">
-                <a class="nav-link disabled" href="/map">Модлист</a>
+                <a class="nav-link" href="https://my.blackmine.pro/" target="_blank">Личный кабинет</a>
             </li>
             <li class="nav-item p-1">
-                <a class="nav-link disabled" href="/map">Скачать клиент</a>
+                <a class="nav-link disabled" href="/mods">Модлист</a>
+            </li>
+            <li class="nav-item p-1 dropdown">
+                <a class="nav-link dropdown-toggle" id="clientDropdown" role="button" data-toggle="dropdown">
+                    Скачать клиент
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/updates/BlackmineLauncher.exe" target="_blank">.exe (Windows
+                        x64)</a>
+                    <a class="dropdown-item" href="/updates/BlackmineLauncher.jar" target="_blank">.jar (Другие
+                        платформы)</a>
+                </div>
             </li>
             <li class="nav-item p-1">
-                <a class="nav-link disabled" href="/map">Скачать Java</a>
+                <a class="nav-link" href="/updates/JRE8.exe" target="_blank">Скачать Java</a>
             </li>
         </ul>
     </div>
